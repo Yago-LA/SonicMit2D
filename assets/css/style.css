@@ -68,12 +68,13 @@ button.updates {
   cursor: pointer;
 }
 
-.trapezio:hover{
+.trapezio:hover {
   transition: all 0.2s ease 0s;
   filter: brightness(1.5);
 }
 
-.mobileMenu, .mobileMenuIcon{
+.mobileMenu,
+.mobileMenuIcon {
   display: none;
 }
 
@@ -85,7 +86,7 @@ main {
   background-repeat: no-repeat;
 }
 
-.dark {
+.darkIndex {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
@@ -94,23 +95,23 @@ main {
   justify-content: center;
 }
 
-.dark img{
- height: 250px;
+.darkIndex img {
+  height: 250px;
 }
 
-h1{
-  color:#FFFF18;
-    font-weight: bold;
-    font-family: SONIC;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #00042D;
-    text-shadow: -1px 1px 0 #00042D,
-        1px 1px 0 #00042D,
-        1px -1px 0 #00042D,
-        -1px -1px 0 #00042D;
-        scale: 1.2;
-        margin-block: 3vh;
-        text-align: center;
+h1 {
+  color: #FFFF18;
+  font-weight: bold;
+  font-family: SONIC;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #00042D;
+  text-shadow: -1px 1px 0 #00042D,
+    1px 1px 0 #00042D,
+    1px -1px 0 #00042D,
+    -1px -1px 0 #00042D;
+  scale: 1.2;
+  margin-block: 3vh;
+  text-align: center;
 }
 
 button.download {
@@ -126,27 +127,50 @@ button.download {
   box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.8);
 }
 
-button.download:hover{
+button.download:hover {
   transition: all 0.2s ease 0s;
-    filter: brightness(1.5);
-    scale: 1.1;
+  filter: brightness(1.5);
+  scale: 1.1;
 }
 
 button {
   cursor: pointer;
 }
 
-@media (max-width:900px){
-  h1{
+@media (max-width:900px) {
+  h1 {
     scale: 1;
   }
 
-  .dark {
+  .darkIndex {
     padding-block: 10px;
   }
 
-  .nav-list, .trapezio{
+  .nav-list,
+  .trapezio {
     display: none;
   }
-  
+
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 50px;
+  color: white;
+}
+
+.dark img{
+  border-radius: 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social img {
+  border-radius: 360px;
+  height: 50px;
+  width: 50px;
 }
